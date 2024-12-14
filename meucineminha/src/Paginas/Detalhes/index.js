@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../Serviços/api";
-import "../Estilo/estilo.css";
 
 export default function Detalhes(){
 
