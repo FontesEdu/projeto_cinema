@@ -1,0 +1,64 @@
+.home {
+    background-image: url('../../../public/fundo soft, clean, cinema.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+.detalhes {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.detalhes .card-detalhes {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.detalhes .titulo-filme {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.detalhes .imagem-filme {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.detalhes .descricao-filme {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.detalhes .nota-filme, .data-lancamento {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.detalhes .link-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.detalhes .link-voltar:hover {
+    background-color: #f40612;
+}

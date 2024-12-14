@@ -1,6 +1,6 @@
 import api from "../Serviços/api";
 import { useState, useEffect } from "react";
-import "../Estilo/estilo.css";
+import "../Estilo/estilo.css"; 
 
 export default function Home() {
     const [filmes, setFilmes] = useState([]);
@@ -42,9 +42,8 @@ export default function Home() {
     }, [pesquisa]);
 
     return (
-        <div className="container">
+        <div className="home">
             <div className="pesquisa">
-                <h2>Pesquisar:</h2>
                 <form onSubmit={(e) => handleInputChange(e)} className="form-pesquisa">
                     <input type="text" placeholder="Pesquisar" className="input-pesquisa" />
                     <input type="submit" className="btn-pesquisa" />

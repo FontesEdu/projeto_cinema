@@ -1,11 +1,10 @@
-body {
+.home {
     background-image: url('../../../public/fundo soft, clean, cinema.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
 }
-
 
 * {
     margin: 0;
