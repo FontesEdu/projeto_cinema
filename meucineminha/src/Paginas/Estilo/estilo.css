@@ -1,0 +1,93 @@
+body {
+    background-image: url('../../../public/fundo soft, clean, cinema.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.pesquisa {
+    margin-bottom: 30px;
+}
+
+.form-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-pesquisa {
+    padding: 10px;
+    margin-right: 10px;
+    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-pesquisa {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pesquisa:hover {
+    background-color: #45a049;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.link-titulo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titulo-filme {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.imagem-filme {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.descricao-filme, .nota-filme, .data-lancamento {
+    font-size: 14px;
+    margin: 8px 0;
+}

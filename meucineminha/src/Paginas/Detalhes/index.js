@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../Serviços/api";
+import "../Estilo/estilo.css";
 
 export default function Detalhes(){
 
@@ -24,18 +25,13 @@ export default function Detalhes(){
 
     return (
         <div>
-            
-                <div key={filmes.id}>
-                    
-                    <h1>{filmes.title}</h1>
-                    <img src= {`https://image.tmdb.org/t/p/w600_and_h900_bestv2${filmes.backdrop_path}`}></img>
-                    <h1>{filmes.overview}</h1>
-                    <h1>{filmes.vote_average}</h1>
-                    <h1>{filmes.release_date}</h1>
-                    
-                </div> 
-            
-            
+            <div key={filmes.id}>
+                <h1>{filmes.title}</h1>
+                <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${filmes.backdrop_path}`} />
+                <h1>{filmes.overview}</h1>
+                <h1>Nota: {filmes.vote_average}</h1>
+                <h1>Lançamento: {filmes.release_date}</h1>
+            </div> 
         </div>
     );
 }
